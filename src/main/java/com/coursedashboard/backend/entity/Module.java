@@ -18,8 +18,6 @@ public class Module {
     private String duration;
     private String startDate;
     private String endDate;
-    private String colorAccent;
-    private String colorSoft;
 
     @ElementCollection
     @CollectionTable(name = "module_days",
@@ -40,10 +38,6 @@ public class Module {
     public void setStartDate(String startDate) { this.startDate = startDate; }
     public String getEndDate() { return endDate; }
     public void setEndDate(String endDate) { this.endDate = endDate; }
-    public String getColorAccent() { return colorAccent; }
-    public void setColorAccent(String colorAccent) { this.colorAccent = colorAccent; }
-    public String getColorSoft() { return colorSoft; }
-    public void setColorSoft(String colorSoft) { this.colorSoft = colorSoft; }
     public List<ModuleDay> getDays() { return days; }
     public void setDays(List<ModuleDay> days) { this.days = days; }
 }
